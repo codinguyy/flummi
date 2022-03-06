@@ -1,92 +1,18 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SVG Gauge Examples</title>
-    <link rel="stylesheet" href="index.css" />
-    <script src="gauge.js"></script>
-    <style>
-      .example {
-        overflow: auto;
-        padding: 10px;
-        box-sizing: border-box;
-        clear: both;
-      }
-      .example > .code, .example > .display {
-        box-sizing: border-box;
-        padding: 10px;
-      }
-      .example > .code {
-      }
-      .example > .display {
-        text-align: center;
-        overflow: auto;
-        padding: 20px 0;
-        overflow: hidden;
-      }
-      .example > .display {
-      }
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SVG Gauge Example</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="gauge.js"></script>
+  <script src="index.js" defer></script>
+</head>
 
-      pre {
-        padding: 0;
-        margin: 0;
-      }
+<body>
+  <div id="testGauge" class="gauge-container"></div>
+</body>
 
-
-
-      @media only screen and (min-device-width: 768px) {
-        .example > .code {
-          width: 65%;
-        }
-        .example > .display {
-          width: 35%;
-        }
-        .example > .code {
-          float: left;
-        }
-        .example > .display {
-          float: right;
-          padding: 10px;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-
-
-
-    <div id="gauge3" class="gauge-container three"></div>
-
-
-    
-
-    <script>
-
-      var pad = function(tar) {}
-
-     
-
-      var gauge3 = Gauge(
-        document.getElementById("gauge3"),
-		    {
-          max: 100,
-          value: 50
-        }
-      );
-
-     
-
-      (function loop() {
-        var 
-            value3 = Math.random() * 100;
-
-        gauge3.setValueAnimated(value3, 1.5);
-
-        window.setTimeout(loop, 4000);
-      })();
-    </script>
-  </body>
 </html>
