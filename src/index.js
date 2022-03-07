@@ -107,7 +107,14 @@ var gaugeCpuMemory = Gauge(document.getElementById("gaugeCpuMemory"),
   },
   label: function (value)
   {
-    return (Math.round(((value/1024) + Number.EPSILON) * 10) / 10) + " GiB";
+    var newValue = value/1024.0;
+
+    if (newValue >= 10.0)
+    {
+      return newValue.toFixed(1) + " GiB";
+    }
+
+    return newValue.toFixed(2) + " GiB";
   }
 });
 
@@ -219,7 +226,14 @@ var gaugeGpuMemory = Gauge(document.getElementById("gaugeGpuMemory"),
   },
   label: function (value)
   {
-    return (Math.round(((value/1024) + Number.EPSILON) * 10) / 10) + " GiB";
+    var newValue = value/1024.0;
+
+    if (newValue >= 10.0)
+    {
+      return newValue.toFixed(1) + " GiB";
+    }
+
+    return newValue.toFixed(2) + " GiB";
   }
 });
 
