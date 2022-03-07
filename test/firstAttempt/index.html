@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Sensor Panel</title>
+    <link href="sensorpanel.css" rel="stylesheet">
+    <script src="gauge.min.js"></script>
+    <script src="sensorpanel.js"></script>
+  </head>
+  <body>
+    <div class="cardGrid">
+      <div class="card">
+        <div class="cardHeader">AMD Ryzen 7 5800X</div>
+        <div class="cardOne gaugeGrid">
+          <canvas class="gaugeHolder" id="CpuUtilization" width="187" height="180"></canvas>
+          <div class="gaugeText">Utilization</div>
+        </div>
+        <div class="cardTwo gaugeGrid">
+          <canvas class="gaugeHolder" id="CpuWattage" width="187" height="180"></canvas>
+          <div class="gaugeText">Wattage</div>
+        </div>
+        <div class="cardThree gaugeGrid">
+          <canvas class="gaugeHolder" id="CpuTemperature" width="187" height="180"></canvas>
+          <div class="gaugeText">Temperature</div>
+        </div>
+        <div class="cardFour gaugeGrid">
+          <canvas class="gaugeHolder" id="CpuMemory" width="187" height="180"></canvas>
+          <div class="gaugeText">Memory</div>
+        </div>
+      </div>
+      <div class="verticalLine"></div>
+      <div class="card">
+        <div class="headerText cardHeader">NVIDIA GeForce RTX 3070</div>
+        <div class="cardOne gaugeGrid">
+          <canvas class="gaugeHolder" id="GpuUtilization" width="187" height="180"></canvas>
+          <div class="gaugeText">Utilization</div>
+        </div>
+        <div class="cardTwo gaugeGrid">
+          <canvas class="gaugeHolder" id="GpuWattage" width="187" height="180"></canvas>
+          <div class="gaugeText">Wattage</div>
+        </div>
+        <div class="cardThree gaugeGrid">
+          <canvas class="gaugeHolder" id="GpuTemperature" width="187" height="180"></canvas>
+          <div class="gaugeText">Temperature</div>
+        </div>
+        <div class="cardFour gaugeGrid">
+          <canvas class="gaugeHolder" id="GpuMemory" width="187" height="180"></canvas>
+          <div class="gaugeText">Memory</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

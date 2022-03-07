@@ -1,0 +1,72 @@
+body {
+  background-color: #353535;
+}
+
+.verticalLine {
+  background-color: #FFFFFF;
+  width: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardGrid {
+  width: 800px;
+  height: 480px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 48% 4% 48%;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-template-rows: 30px 1fr 1fr;
+}
+
+.cardHeader {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.cardOne {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.cardTwo {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.cardThree {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.cardFour {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.gaugeGrid {
+  display: grid;
+  grid-template-rows: 10px 1fr 20px;
+}
+
+.gaugeHolder {
+  grid-row: 2;
+}
+
+.gaugeText {
+  color: #FFFFFF;
+  grid-row: 3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
