@@ -11,14 +11,61 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <div id="gaugeCpuUtilization" class="gauge-container"></div>
-    <div id="gaugeCpuWattage" class="gauge-container"></div>
-    <div id="gaugeCpuTemperature" class="gauge-container"></div>
-    <div id="gaugeCpuMemory" class="gauge-container"></div>
+    <div id="rootContainer">
 
-    <div id="gaugeGpuUtilization" class="gauge-container"></div>
-    <div id="gaugeGpuWattage" class="gauge-container"></div>
-    <div id="gaugeGpuTemperature" class="gauge-container"></div>
-    <div id="gaugeGpuMemory" class="gauge-container"></div>
+      <div class="componentContainer">
+        <div class="headerText">AMD Ryzen 7 5800X</div>
+        <div class="gaugesContainer">
+
+          <div class="namedGauge">
+            <div id="gaugeCpuUtilization" class="gauge-container"></div>
+            <div class="titleText">Utilization</div>
+          </div>
+
+          <div class="namedGauge">
+            <div id="gaugeCpuWattage" class="gauge-container"></div>
+            <div class="titleText">Wattage</div>
+          </div>
+
+          <div class="namedGauge">
+            <div id="gaugeCpuTemperature" class="gauge-container"></div>
+            <div class="titleText">Temperature</div>
+          </div>
+
+          <div class="namedGauge">
+            <div id="gaugeCpuMemory" class="gauge-container"></div>
+            <div class="titleText">Memory</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="verticalLine"></div>
+
+      <div class="componentContainer">
+        <div class="headerText">NVIDIA GeForce RTX 3070</div>
+        <div class="gaugesContainer">
+          
+          <div class="namedGauge">
+            <div id="gaugeGpuUtilization" class="gauge-container"></div>
+            <div class="titleText">Utilization</div>
+          </div>
+
+          <div class="namedGauge">
+            <div id="gaugeGpuWattage" class="gauge-container"></div>
+            <div class="titleText">Wattage</div>
+          </div>
+
+          <div class="namedGauge">
+            <div id="gaugeGpuTemperature" class="gauge-container"></div>
+            <div class="titleText">Temperature</div>
+          </div>
+
+          <div class="namedGauge">
+            <div id="gaugeGpuMemory" class="gauge-container"></div>
+            <div class="titleText">Memory</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

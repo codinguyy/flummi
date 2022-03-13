@@ -4,6 +4,42 @@ body {
   font-family: Hevletica, 'sans-serif';
 }
 
+#rootContainer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+#verticalLine {
+  background-color: #FFFFFF;
+  width: 2px;
+}
+
+.componentContainer {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.headerText {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.gaugesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.namedGauge {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.titleText {
+  text-align: center;
+  font-family: sans-serif;
+}
+
 .gauge-container {
   width: 200px;
   height: 200px;
